@@ -1,0 +1,170 @@
+.screen {
+  min-height: 100dvh;
+  background: #fff;
+  padding-bottom: 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+
+.back {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #4a90d9;
+  cursor: pointer;
+  padding: 0;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.section {
+  padding: 20px 16px 0;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 14px;
+}
+
+.fieldLabel {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+.input {
+  width: 100%;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  outline: none;
+  background: #fff;
+}
+
+.input:focus {
+  border-color: #4a90d9;
+}
+
+.saveBtn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #4a90d9;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Tile rows */
+.tileRow {
+  border: 1.5px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  background: #fafafa;
+}
+
+.tileTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.tileName {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.nameInput {
+  flex: 1;
+  border: 1.5px solid #4a90d9;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 15px;
+  color: #333;
+  outline: none;
+  margin-right: 10px;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #e53e3e;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.tileToggles {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+}
+
+.toggleLabel input[type="checkbox"] {
+  accent-color: #4a90d9;
+}
+
+/* Add tile row */
+.addRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.addRow .input {
+  flex: 1;
+  margin: 0;
+}
+
+.addBtn {
+  padding: 0 20px;
+  border-radius: 10px;
+  border: none;
+  background: #4a90d9;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}

@@ -1,0 +1,11 @@
+.banner {
+  background: #e53e3e;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.banner strong {
+  font-weight: 600;
+}
