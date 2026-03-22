@@ -2,7 +2,6 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
-from mangum import Mangum
 from _db import get_conn, get_cursor
 
 app = FastAPI()
@@ -79,4 +78,3 @@ def delete_allocation(alloc_id: int):
         conn.close()
 
 
-handler = Mangum(app)

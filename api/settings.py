@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
-from mangum import Mangum
 from _db import get_conn, get_cursor
 
 app = FastAPI()
@@ -59,4 +58,3 @@ def update_settings(body: SettingsIn):
         conn.close()
 
 
-handler = Mangum(app)

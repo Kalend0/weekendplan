@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from mangum import Mangum
 from _db import get_conn, get_cursor
 
 app = FastAPI()
@@ -81,4 +80,3 @@ def delete_tile(tile_id: int):
         conn.close()
 
 
-handler = Mangum(app)
